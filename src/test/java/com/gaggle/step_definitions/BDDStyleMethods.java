@@ -2,6 +2,7 @@ package com.gaggle.step_definitions;
 
 import com.gaggle.pojo.Fields;
 import com.gaggle.utillities.ConfigurationReader;
+import com.gaggle.utillities.Utils;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
@@ -41,24 +42,8 @@ public class BDDStyleMethods {
         return requestSpec;
     }
 
-    public static Fields bodyForPost(String message, String timestamp){
-        Fields body=new Fields(message,timestamp);
-        return body;
 
 
-    }
-
-    public static String iSO_CurrentTime(){
-        Date date = new Date(System.currentTimeMillis());
-
-        SimpleDateFormat sdf;
-        sdf = new SimpleDateFormat("HH:mm:ss");
-        sdf.setTimeZone(TimeZone.getDefault());
-        String iSO8601_time = sdf.format(date);
-
-
-      return iSO8601_time;
-    }
 
     public static void setRequest(String method,RequestSpecification requestSpec,String post_iSO_currentTime,String
             post_message ,String idPost){
@@ -66,7 +51,7 @@ public class BDDStyleMethods {
 
         switch (method) {
             case "Post":
-                post_iSO_currentTime = BDDStyleMethods.iSO_CurrentTime();
+                post_iSO_currentTime = Utils.iSO_CurrentTime();
                 post_message = "Welcome to the machine.";
                 Fields body = new Fields(post_message, post_iSO_currentTime);
                 response = given().
