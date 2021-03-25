@@ -1,0 +1,463 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-24T23:00:23.353Z",
+        "before": [
+          {
+            "result": {
+              "duration": 105000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.gaggle.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Verify if place is being Successfully \"Post\" method using \"\u003cEndPoint\u003e\" endpoint",
+        "description": "",
+        "id": "get;verify-if-place-is-being-successfully-\"\u003cmethod\u003e\"-method-using-\"\u003cendpoint\u003e\"-endpoint;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2632000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1118000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "Users Performs \"Post\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Post\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.gaggle.step_definitions.GetPostStep.users_performs_operation(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 4000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "User should see the success status \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"201\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.gaggle.step_definitions.GetPostStep.user_should_see_the_success_status(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "Payload \"message\" value is \"Welcome to the machine.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"message\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Welcome to the machine.\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.gaggle.step_definitions.GetPostStep.payload_value_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-24T23:00:27.429Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.gaggle.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verify if place is being Successfully \"Get\" method using \"\u003cEndPoint\u003e\" endpoint",
+        "description": "",
+        "id": "get;verify-if-place-is-being-successfully-\"\u003cmethod\u003e\"-method-using-\"\u003cendpoint\u003e\"-endpoint;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 176000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "Users Performs \"Get\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Get\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.gaggle.step_definitions.GetPostStep.users_performs_operation(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 8000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "User should see the success status \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.gaggle.step_definitions.GetPostStep.user_should_see_the_success_status(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "Payload \"message\" value is \"Welcome to the machine.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"message\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Welcome to the machine.\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.gaggle.step_definitions.GetPostStep.payload_value_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-24T23:00:27.718Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.gaggle.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Verify if place is being Successfully \"Put\" method using \"\u003cEndPoint\u003e\" endpoint",
+        "description": "",
+        "id": "get;verify-if-place-is-being-successfully-\"\u003cmethod\u003e\"-method-using-\"\u003cendpoint\u003e\"-endpoint;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "Users Performs \"Put\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Put\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.gaggle.step_definitions.GetPostStep.users_performs_operation(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "User should see the success status \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.gaggle.step_definitions.GetPostStep.user_should_see_the_success_status(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "Payload \"message\" value is \"update\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"message\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"update\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.gaggle.step_definitions.GetPostStep.payload_value_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-24T23:00:27.834Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.gaggle.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify if place is being Successfully \"Patch\" method using \"\u003cEndPoint\u003e\" endpoint",
+        "description": "",
+        "id": "get;verify-if-place-is-being-successfully-\"\u003cmethod\u003e\"-method-using-\"\u003cendpoint\u003e\"-endpoint;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 69000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 5000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "Users Performs \"Patch\" operation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Patch\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.gaggle.step_definitions.GetPostStep.users_performs_operation(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "User should see the success status \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.gaggle.step_definitions.GetPostStep.user_should_see_the_success_status(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "Payload \"message\" value is \"partially\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"message\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"partially\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.gaggle.step_definitions.GetPostStep.payload_value_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "GET",
+    "description": "  Verification of get operation",
+    "id": "get",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GetPost.feature",
+    "tags": []
+  }
+]

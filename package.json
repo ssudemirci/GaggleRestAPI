@@ -1,0 +1,14 @@
+{
+  "name": "gaggleserver",
+  "version": "1.0.0",
+  "description": "JSON payload",
+  "main": "index.js",
+  "scripts": {
+    "json:server": "json-server --watch gaggle.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
