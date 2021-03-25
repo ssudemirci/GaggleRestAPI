@@ -2,6 +2,7 @@ package com.gaggle.step_definitions;
 
 import com.gaggle.base.BaseTest;
 import com.gaggle.pojo.Fields;
+import com.gaggle.utillities.Utils;
 import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,7 +16,7 @@ import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.is;
 
 public class GetPostStep extends BaseTest {
-    private String post_iSO_currentTime = BDDStyleMethods.iSO_CurrentTime();
+    private String post_iSO_currentTime;
     private static String post_message;
     private static String id;
     private Response response;
@@ -31,7 +32,7 @@ public class GetPostStep extends BaseTest {
 
         switch (method) {
             case "Post":
-                post_iSO_currentTime = BDDStyleMethods.iSO_CurrentTime();
+                post_iSO_currentTime = Utils.iSO_CurrentTime();
                 post_message = "Welcome to the machine.";
                 Fields body = new Fields(post_message, post_iSO_currentTime);
                 response = given().

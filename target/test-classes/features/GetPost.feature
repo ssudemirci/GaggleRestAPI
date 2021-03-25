@@ -12,7 +12,7 @@ Feature:HTTP request methods
       | Get    | 200  | message | Welcome to the machine. |
       | Put    | 200  | message | update                  |
       | Patch  | 200  | message | partially               |
-     # | Delete | 200  | message |                         |
+      | Delete | 200  | message |                         |
 
 
 
