@@ -7,7 +7,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
-import static io.restassured.RestAssured.given;
+
 
 public class BaseTest {
     public static RequestSpecification requestSpec;

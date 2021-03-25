@@ -75,8 +75,7 @@ public class BDDStyleMethods {
                         post().prettyPeek();
                 jsonPath = response.jsonPath();
                 id = response.jsonPath().getString("id");
-                //assertThat(response.statusCode(), is(201));
-                // assertThat(jsonPath.getString("message"), is(post_message));
+
                 break;
             case "Get":
                 requestSpec = requestSpec.pathParam("id", id);
@@ -93,7 +92,6 @@ public class BDDStyleMethods {
                         when().
                         put("/" + id).prettyPeek();
                 jsonPath = response.jsonPath();
-                //  Assert.assertTrue(jsonPath.getString("message").contains(update));
                 break;
             case "Patch":
                 String partially = "partially ";
@@ -103,7 +101,6 @@ public class BDDStyleMethods {
                         when().
                         patch("/" + id).prettyPeek();
                 jsonPath = response.jsonPath();
-                //  Assert.assertTrue(jsonPath.getString("message").contains(partially));
                 break;
             case "Delete":
                 response = given().
@@ -111,7 +108,6 @@ public class BDDStyleMethods {
                         when().
                         delete("/" + id).prettyPeek();
                 jsonPath = response.jsonPath();
-                // Assert.assertTrue(response.getBody().toString().isEmpty());
                 break;
         }
 

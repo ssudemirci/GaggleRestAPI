@@ -1,8 +1,8 @@
-Feature:GET
+Feature:HTTP request methods
 
-  Verification of get operation
 
-  Scenario Outline: Verify if place is being Successfully "<method>" method using "<EndPoint>" endpoint
+
+  Scenario Outline: Verification of HTTP request methods.
     Given Users Performs "<method>" operation
     Then User should see the success status "<code>"
     And  Payload "<body>" value is "<value>"
@@ -12,7 +12,7 @@ Feature:GET
       | Get    | 200  | message | Welcome to the machine. |
       | Put    | 200  | message | update                  |
       | Patch  | 200  | message | partially               |
-     # | Delete | 200  | message |                         |
+      | Delete | 200  | message |                         |
 
 
 
