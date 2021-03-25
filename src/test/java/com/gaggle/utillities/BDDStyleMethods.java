@@ -1,4 +1,4 @@
-package com.gaggle.step_definitions;
+package com.gaggle.utillities;
 
 import com.gaggle.pojo.Fields;
 import com.gaggle.utillities.ConfigurationReader;
