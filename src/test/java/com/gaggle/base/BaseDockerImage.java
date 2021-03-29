@@ -8,18 +8,16 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
 
-
-public class BaseTest {
+public class BaseDockerImage {
     public static RequestSpecification requestSpec;
     public static ResponseSpecification responseSpec;
 
     public static void setUP() {
 
-        RestAssured.baseURI = ConfigurationReader.getProperty("baseURI");
-        RestAssured.port = 3000;
-        RestAssured.basePath = ConfigurationReader.getProperty("basePath");
-        requestSpec = new RequestSpecBuilder().build().
-                contentType(ContentType.JSON);
+        RestAssured.baseURI = ConfigurationReader.getProperty("dockerBaseURI");
+
+        RestAssured.basePath = ConfigurationReader.getProperty("dockerBasePath");
+        requestSpec = new RequestSpecBuilder().build();
 
     }
 

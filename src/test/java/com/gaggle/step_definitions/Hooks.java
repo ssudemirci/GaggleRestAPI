@@ -15,12 +15,12 @@ public class Hooks {
     public static RequestSpecification requestSpec;
     public ResponseSpecification responseSpec;
 
-    @Before
-    public void setup(){
-        logger.info(":::: Starting automation :::");
-        logger.info("Base URL : "+ ConfigurationReader.getProperty("baseURI"));
-        System.out.println(" Port type: "+ ConfigurationReader.getProperty("basePath"));
-
-    }
+//    @Before
+//    public void setup(){
+//        logger.info(":::: Starting automation :::");
+//        logger.info("Base URL : "+ ConfigurationReader.getProperty("baseURI"));
+//        System.out.println(" Port type: "+ ConfigurationReader.getProperty("basePath"));
+//
+//    }
 
 }

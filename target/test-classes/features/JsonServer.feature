@@ -3,7 +3,7 @@ Feature:HTTP request methods
 
 
   Scenario Outline: Verification of HTTP request methods.
-    Given Users Performs "<method>" operation
+    Given Users Performs "<method>" operationcb
     Then User should see the success status "<code>"
     And  Payload "<body>" value is "<value>"
     Examples:
@@ -12,7 +12,7 @@ Feature:HTTP request methods
       | Get    | 200  | message | Welcome to the machine. |
       | Put    | 200  | message | update                  |
       | Patch  | 200  | message | partially               |
-      | Delete | 200  | message |                         |
+     # | Delete | 200  | message |                         |
 
 
 
