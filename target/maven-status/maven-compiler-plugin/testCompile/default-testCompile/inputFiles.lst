@@ -1,9 +1,11 @@
 /Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/utillities/ConfigurationReader.java
-/Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/step_definitions/BDDStyleMethods.java
 /Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/base/BaseTest.java
+/Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/utillities/BDDStyleMethods.java
 /Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/step_definitions/Hooks.java
+/Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/utillities/Utils_Gaggle.java
+/Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/step_definitions/DockerTest.java
 /Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/runner/CukesRunner.java
-/Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/utillities/Utils.java
 /Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/step_definitions/GetPostStep.java
 /Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/utillities/EndPointResources.java
+/Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/base/Gaggle.java
 /Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/java/com/gaggle/pojo/Fields.java

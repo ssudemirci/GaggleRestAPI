@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-24T23:00:23.353Z",
+        "start_timestamp": "2021-03-29T21:21:10.313Z",
         "before": [
           {
             "result": {
-              "duration": 105000000,
+              "duration": 152000000,
               "status": "passed"
             },
             "match": {
@@ -16,25 +16,25 @@
           }
         ],
         "line": 11,
-        "name": "Verify if place is being Successfully \"Post\" method using \"\u003cEndPoint\u003e\" endpoint",
+        "name": "Verification of HTTP request methods.",
         "description": "",
-        "id": "get;verify-if-place-is-being-successfully-\"\u003cmethod\u003e\"-method-using-\"\u003cendpoint\u003e\"-endpoint;;2",
+        "id": "http-request-methods;verification-of-http-request-methods.;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2632000000,
+              "duration": 4815000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1118000000,
+                  "duration": 2903000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
                 }
               }
             ],
@@ -47,23 +47,23 @@
                   "offset": 15
                 }
               ],
-              "location": "com.gaggle.step_definitions.GetPostStep.users_performs_operation(java.lang.String)"
+              "location": "com.gaggle.step_definitions.JsonServerStep.users_performs_operation(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 17000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 4000000,
+                  "duration": 6000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
                 }
               }
             ],
@@ -76,23 +76,22 @@
                   "offset": 35
                 }
               ],
-              "location": "com.gaggle.step_definitions.GetPostStep.user_should_see_the_success_status(java.lang.String)"
+              "location": "com.gaggle.step_definitions.JsonServerStep.user_should_see_the_success_status(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 38000000,
+              "duration": 40000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 2000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
                 }
               }
             ],
@@ -109,18 +108,18 @@
                   "offset": 27
                 }
               ],
-              "location": "com.gaggle.step_definitions.GetPostStep.payload_value_is(java.lang.String,java.lang.String)"
+              "location": "com.gaggle.step_definitions.JsonServerStep.payload_value_is(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-24T23:00:27.429Z",
+        "start_timestamp": "2021-03-29T21:21:18.549Z",
         "before": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 8000000,
               "status": "passed"
             },
             "match": {
@@ -129,24 +128,25 @@
           }
         ],
         "line": 12,
-        "name": "Verify if place is being Successfully \"Get\" method using \"\u003cEndPoint\u003e\" endpoint",
+        "name": "Verification of HTTP request methods.",
         "description": "",
-        "id": "get;verify-if-place-is-being-successfully-\"\u003cmethod\u003e\"-method-using-\"\u003cendpoint\u003e\"-endpoint;;3",
+        "id": "http-request-methods;verification-of-http-request-methods.;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 176000000,
+              "duration": 224000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
                 }
               }
             ],
@@ -159,7 +159,7 @@
                   "offset": 15
                 }
               ],
-              "location": "com.gaggle.step_definitions.GetPostStep.users_performs_operation(java.lang.String)"
+              "location": "com.gaggle.step_definitions.JsonServerStep.users_performs_operation(java.lang.String)"
             },
             "keyword": "Given "
           },
@@ -171,11 +171,11 @@
             "before": [
               {
                 "result": {
-                  "duration": 8000000,
+                  "duration": 3000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
                 }
               }
             ],
@@ -188,13 +188,13 @@
                   "offset": 35
                 }
               ],
-              "location": "com.gaggle.step_definitions.GetPostStep.user_should_see_the_success_status(java.lang.String)"
+              "location": "com.gaggle.step_definitions.JsonServerStep.user_should_see_the_success_status(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 23000000,
+              "duration": 26000000,
               "status": "passed"
             },
             "before": [
@@ -204,7 +204,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
                 }
               }
             ],
@@ -221,18 +221,18 @@
                   "offset": 27
                 }
               ],
-              "location": "com.gaggle.step_definitions.GetPostStep.payload_value_is(java.lang.String,java.lang.String)"
+              "location": "com.gaggle.step_definitions.JsonServerStep.payload_value_is(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-24T23:00:27.718Z",
+        "start_timestamp": "2021-03-29T21:21:18.850Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -241,25 +241,25 @@
           }
         ],
         "line": 13,
-        "name": "Verify if place is being Successfully \"Put\" method using \"\u003cEndPoint\u003e\" endpoint",
+        "name": "Verification of HTTP request methods.",
         "description": "",
-        "id": "get;verify-if-place-is-being-successfully-\"\u003cmethod\u003e\"-method-using-\"\u003cendpoint\u003e\"-endpoint;;4",
+        "id": "http-request-methods;verification-of-http-request-methods.;;4",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 73000000,
+              "duration": 114000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 2000000,
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
                 }
               }
             ],
@@ -272,13 +272,12 @@
                   "offset": 15
                 }
               ],
-              "location": "com.gaggle.step_definitions.GetPostStep.users_performs_operation(java.lang.String)"
+              "location": "com.gaggle.step_definitions.JsonServerStep.users_performs_operation(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "before": [
@@ -288,7 +287,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
                 }
               }
             ],
@@ -301,13 +300,13 @@
                   "offset": 35
                 }
               ],
-              "location": "com.gaggle.step_definitions.GetPostStep.user_should_see_the_success_status(java.lang.String)"
+              "location": "com.gaggle.step_definitions.JsonServerStep.user_should_see_the_success_status(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 21000000,
+              "duration": 25000000,
               "status": "passed"
             },
             "before": [
@@ -317,7 +316,7 @@
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
                 }
               }
             ],
@@ -334,18 +333,18 @@
                   "offset": 27
                 }
               ],
-              "location": "com.gaggle.step_definitions.GetPostStep.payload_value_is(java.lang.String,java.lang.String)"
+              "location": "com.gaggle.step_definitions.JsonServerStep.payload_value_is(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-24T23:00:27.834Z",
+        "start_timestamp": "2021-03-29T21:21:19.037Z",
         "before": [
           {
             "result": {
-              "duration": 6000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "match": {
@@ -354,25 +353,25 @@
           }
         ],
         "line": 14,
-        "name": "Verify if place is being Successfully \"Patch\" method using \"\u003cEndPoint\u003e\" endpoint",
+        "name": "Verification of HTTP request methods.",
         "description": "",
-        "id": "get;verify-if-place-is-being-successfully-\"\u003cmethod\u003e\"-method-using-\"\u003cendpoint\u003e\"-endpoint;;5",
+        "id": "http-request-methods;verification-of-http-request-methods.;;5",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 69000000,
+              "duration": 77000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 5000000,
+                  "duration": 2000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
                 }
               }
             ],
@@ -385,7 +384,7 @@
                   "offset": 15
                 }
               ],
-              "location": "com.gaggle.step_definitions.GetPostStep.users_performs_operation(java.lang.String)"
+              "location": "com.gaggle.step_definitions.JsonServerStep.users_performs_operation(java.lang.String)"
             },
             "keyword": "Given "
           },
@@ -397,10 +396,11 @@
             "before": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
                 }
               }
             ],
@@ -413,23 +413,23 @@
                   "offset": 35
                 }
               ],
-              "location": "com.gaggle.step_definitions.GetPostStep.user_should_see_the_success_status(java.lang.String)"
+              "location": "com.gaggle.step_definitions.JsonServerStep.user_should_see_the_success_status(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 23000000,
+              "duration": 34000000,
               "status": "passed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 2000000,
+                  "duration": 4000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.GetPostStep.init()"
+                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
                 }
               }
             ],
@@ -446,18 +446,18 @@
                   "offset": 27
                 }
               ],
-              "location": "com.gaggle.step_definitions.GetPostStep.payload_value_is(java.lang.String,java.lang.String)"
+              "location": "com.gaggle.step_definitions.JsonServerStep.payload_value_is(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       }
     ],
-    "name": "GET",
-    "description": "  Verification of get operation",
-    "id": "get",
+    "name": "HTTP request methods",
+    "description": "",
+    "id": "http-request-methods",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/GetPost.feature",
+    "uri": "file:src/test/resources/features/JsonServer.feature",
     "tags": []
   }
 ]

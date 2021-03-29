@@ -1,18 +1,12 @@
 package com.gaggle.utillities;
 
 import com.gaggle.pojo.Fields;
-import com.gaggle.utillities.ConfigurationReader;
-import com.gaggle.utillities.Utils;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.TimeZone;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
@@ -51,7 +45,7 @@ public class BDDStyleMethods {
 
         switch (method) {
             case "Post":
-                post_iSO_currentTime = Utils.iSO_CurrentTime();
+                post_iSO_currentTime = Utils_Gaggle.iSO_CurrentTime();
                 post_message = "Welcome to the machine.";
                 Fields body = new Fields(post_message, post_iSO_currentTime);
                 response = given().

@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class Utils {
+public class Utils_Gaggle {
 
 
     public static String getJsonPath(Response response, String key) {

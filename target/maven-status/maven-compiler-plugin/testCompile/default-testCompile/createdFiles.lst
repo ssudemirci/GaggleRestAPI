@@ -1,0 +1,11 @@
+com/gaggle/utillities/EndPointResources.class
+com/gaggle/utillities/ConfigurationReader.class
+com/gaggle/step_definitions/GetPostStep.class
+com/gaggle/step_definitions/Hooks.class
+com/gaggle/runner/CukesRunner.class
+com/gaggle/step_definitions/DockerTest.class
+com/gaggle/base/BaseTest.class
+com/gaggle/utillities/Utils_Gaggle.class
+com/gaggle/pojo/Fields.class
+com/gaggle/base/Gaggle.class
+com/gaggle/utillities/BDDStyleMethods.class

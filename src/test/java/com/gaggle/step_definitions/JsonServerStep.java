@@ -1,8 +1,8 @@
 package com.gaggle.step_definitions;
 
-import com.gaggle.base.BaseTest;
+import com.gaggle.base.BaseJsonServer;
 import com.gaggle.pojo.Fields;
-import com.gaggle.utillities.Utils;
+import com.gaggle.utillities.Utils_Gaggle;
 import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,7 +15,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.is;
 
-public class GetPostStep extends BaseTest {
+public class JsonServerStep extends BaseJsonServer {
     private String post_iSO_currentTime;
     private static String post_message;
     private static String id;
@@ -23,7 +23,7 @@ public class GetPostStep extends BaseTest {
     private JsonPath jsonPath;
 
     @BeforeStep
-    public static void init() {
+    private static void init() {
         setUP();
 
     }
@@ -32,7 +32,7 @@ public class GetPostStep extends BaseTest {
 
         switch (method) {
             case "Post":
-                post_iSO_currentTime = Utils.iSO_CurrentTime();
+                post_iSO_currentTime = Utils_Gaggle.iSO_CurrentTime();
                 post_message = "Welcome to the machine.";
                 Fields body = new Fields(post_message, post_iSO_currentTime);
                 response = given().
@@ -79,7 +79,7 @@ public class GetPostStep extends BaseTest {
 
     @Then("User should see the success status {string}")
     public void user_should_see_the_success_status(String string) {
-        Assert.assertEquals(response.statusCode(), Integer.parseInt(string));
+        Assert.assertEquals(response.statusCode(), is(Integer.parseInt(string)));
 
     }
 
