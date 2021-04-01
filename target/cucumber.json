@@ -3,18 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-29T21:21:10.313Z",
-        "before": [
-          {
-            "result": {
-              "duration": 152000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.gaggle.step_definitions.Hooks.setup()"
-            }
-          }
-        ],
+        "start_timestamp": "2021-04-01T01:55:31.011Z",
         "line": 11,
         "name": "Verification of HTTP request methods.",
         "description": "",
@@ -24,17 +13,18 @@
         "steps": [
           {
             "result": {
-              "duration": 4815000000,
-              "status": "passed"
+              "error_message": "java.lang.IllegalArgumentException: Specification to merge with cannot be null\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)\n\tat io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)\n\tat io.restassured.internal.SpecificationMerger.merge(SpecificationMerger.groovy:92)\n\tat io.restassured.internal.SpecificationMerger$merge.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)\n\tat io.restassured.internal.RequestSpecificationImpl.spec(RequestSpecificationImpl.groovy:918)\n\tat com.gaggle.step_definitions.JsonServerStep.users_performs_operation(JsonServerStep.java:39)\n\tat ✽.Users Performs \"Post\" operation(file:///Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/resources/features/JsonServer.feature:6)\n",
+              "duration": 478000000,
+              "status": "failed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 2903000000,
+                  "duration": 910000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
                 }
               }
             ],
@@ -53,17 +43,16 @@
           },
           {
             "result": {
-              "duration": 17000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
-                  "duration": 6000000,
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
                 }
               }
             ],
@@ -82,16 +71,16 @@
           },
           {
             "result": {
-              "duration": 40000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
                 }
               }
             ],
@@ -115,18 +104,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-29T21:21:18.549Z",
-        "before": [
-          {
-            "result": {
-              "duration": 8000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.gaggle.step_definitions.Hooks.setup()"
-            }
-          }
-        ],
+        "start_timestamp": "2021-04-01T01:55:32.652Z",
         "line": 12,
         "name": "Verification of HTTP request methods.",
         "description": "",
@@ -136,17 +114,17 @@
         "steps": [
           {
             "result": {
-              "duration": 224000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\n\tat com.gaggle.step_definitions.JsonServerStep.users_performs_operation(JsonServerStep.java:46)\n\tat ✽.Users Performs \"Get\" operation(file:///Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/resources/features/JsonServer.feature:6)\n",
+              "duration": 4000000,
+              "status": "failed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
                 }
               }
             ],
@@ -165,17 +143,16 @@
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
-                  "duration": 3000000,
-                  "status": "passed"
+                  "duration": 1000000,
+                  "status": "skipped"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
                 }
               }
             ],
@@ -194,17 +171,16 @@
           },
           {
             "result": {
-              "duration": 26000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
-                  "duration": 2000000,
-                  "status": "passed"
+                  "duration": 1000000,
+                  "status": "skipped"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
                 }
               }
             ],
@@ -228,18 +204,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-29T21:21:18.850Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.gaggle.step_definitions.Hooks.setup()"
-            }
-          }
-        ],
+        "start_timestamp": "2021-04-01T01:55:32.717Z",
         "line": 13,
         "name": "Verification of HTTP request methods.",
         "description": "",
@@ -249,17 +214,17 @@
         "steps": [
           {
             "result": {
-              "duration": 114000000,
-              "status": "passed"
+              "error_message": "java.lang.IllegalArgumentException: Specification to merge with cannot be null\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)\n\tat io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)\n\tat io.restassured.internal.SpecificationMerger.merge(SpecificationMerger.groovy:92)\n\tat io.restassured.internal.SpecificationMerger$merge.call(Unknown Source)\n\tat io.restassured.internal.RequestSpecificationImpl.spec(RequestSpecificationImpl.groovy:918)\n\tat com.gaggle.step_definitions.JsonServerStep.users_performs_operation(JsonServerStep.java:56)\n\tat ✽.Users Performs \"Put\" operation(file:///Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/resources/features/JsonServer.feature:6)\n",
+              "duration": 2000000,
+              "status": "failed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
                 }
               }
             ],
@@ -278,16 +243,16 @@
           },
           {
             "result": {
-              "status": "passed"
+              "duration": 5000000,
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1000000,
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
                 }
               }
             ],
@@ -306,17 +271,16 @@
           },
           {
             "result": {
-              "duration": 25000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
                   "duration": 1000000,
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
                 }
               }
             ],
@@ -340,18 +304,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-29T21:21:19.037Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.gaggle.step_definitions.Hooks.setup()"
-            }
-          }
-        ],
+        "start_timestamp": "2021-04-01T01:55:32.785Z",
         "line": 14,
         "name": "Verification of HTTP request methods.",
         "description": "",
@@ -361,17 +314,18 @@
         "steps": [
           {
             "result": {
-              "duration": 77000000,
-              "status": "passed"
+              "error_message": "java.lang.IllegalArgumentException: Specification to merge with cannot be null\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)\n\tat io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)\n\tat io.restassured.internal.SpecificationMerger.merge(SpecificationMerger.groovy:92)\n\tat io.restassured.internal.SpecificationMerger$merge.call(Unknown Source)\n\tat io.restassured.internal.RequestSpecificationImpl.spec(RequestSpecificationImpl.groovy:918)\n\tat com.gaggle.step_definitions.JsonServerStep.users_performs_operation(JsonServerStep.java:65)\n\tat ✽.Users Performs \"Patch\" operation(file:///Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/resources/features/JsonServer.feature:6)\n",
+              "duration": 1000000,
+              "status": "failed"
             },
             "before": [
               {
                 "result": {
-                  "duration": 2000000,
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
                 }
               }
             ],
@@ -391,16 +345,15 @@
           {
             "result": {
               "duration": 1000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1000000,
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
                 }
               }
             ],
@@ -419,17 +372,16 @@
           },
           {
             "result": {
-              "duration": 34000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
-                  "duration": 4000000,
-                  "status": "passed"
+                  "duration": 1000000,
+                  "status": "skipped"
                 },
                 "match": {
-                  "location": "com.gaggle.step_definitions.JsonServerStep.init()"
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
                 }
               }
             ],
@@ -458,6 +410,105 @@
     "id": "http-request-methods",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/JsonServer.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-01T01:55:32.853Z",
+        "line": 9,
+        "name": "Verification of Get request methods.",
+        "description": "",
+        "id": "docker-image;verification-of-get-request-methods.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.net.ConnectException: Connection refused (Connection refused)\n\tat java.net.PlainSocketImpl.socketConnect(Native Method)\n\tat java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)\n\tat java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)\n\tat java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)\n\tat java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)\n\tat java.net.Socket.connect(Socket.java:606)\n\tat org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)\n\tat org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)\n\tat org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)\n\tat org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)\n\tat org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)\n\tat org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)\n\tat org.apache.http.client.HttpClient$execute$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)\n\tat io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)\n\tat io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)\n\tat io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)\n\tat io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)\n\tat io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\n\tat io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1200)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)\n\tat io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)\n\tat io.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat io.restassured.filter.Filter$filter.call(Unknown Source)\n\tat io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)\n\tat io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)\n\tat io.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat io.restassured.filter.Filter$filter.call(Unknown Source)\n\tat io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)\n\tat io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)\n\tat io.restassured.filter.Filter$filter.call(Unknown Source)\n\tat io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)\n\tat io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)\n\tat io.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:157)\n\tat io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)\n\tat io.restassured.filter.FilterContext$next.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\n\tat io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)\n\tat io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)\n\tat com.gaggle.step_definitions.DockerImageStep.users_performs_get_operation(DockerImageStep.java:40)\n\tat ✽.Users Performs Get operation(file:///Users/selcuksudemirci/Desktop/GaggleRestAPI/src/test/resources/features/dockerImage.feature:4)\n",
+              "duration": 1402000000,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "Users Performs Get operation",
+            "match": {
+              "location": "com.gaggle.step_definitions.DockerImageStep.users_performs_get_operation()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "User should see the success status  as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "com.gaggle.step_definitions.DockerImageStep.userShouldSeeTheSuccessStatusAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "com.gaggle.step_definitions.DockerImageStep.init()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "Payload has \"Welcome to the machine.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Welcome to the machine.\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.gaggle.step_definitions.DockerImageStep.payload_has(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Docker image",
+    "description": "",
+    "id": "docker-image",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/dockerImage.feature",
     "tags": []
   }
 ]

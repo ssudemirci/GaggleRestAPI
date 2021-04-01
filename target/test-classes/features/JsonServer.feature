@@ -3,7 +3,7 @@ Feature:HTTP request methods
 
 
   Scenario Outline: Verification of HTTP request methods.
-    Given Users Performs "<method>" operationcb
+    Given Users Performs "<method>" operation
     Then User should see the success status "<code>"
     And  Payload "<body>" value is "<value>"
     Examples:

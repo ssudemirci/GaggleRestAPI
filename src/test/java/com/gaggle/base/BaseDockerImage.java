@@ -9,15 +9,10 @@ import io.restassured.specification.ResponseSpecification;
 
 
 public class BaseDockerImage {
-    public static RequestSpecification requestSpec;
-    public static ResponseSpecification responseSpec;
 
-    public static void setUP() {
-
+    public  void setUP() {
         RestAssured.baseURI = ConfigurationReader.getProperty("dockerBaseURI");
-
         RestAssured.basePath = ConfigurationReader.getProperty("dockerBasePath");
-        requestSpec = new RequestSpecBuilder().build();
 
     }
 

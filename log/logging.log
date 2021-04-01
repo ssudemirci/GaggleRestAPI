@@ -752,3 +752,9 @@
 2021-03-29 17:42:46 INFO  Hooks:21 - Base URL : null
 2021-03-29 17:43:35 INFO  Hooks:20 - :::: Starting automation :::
 2021-03-29 17:43:35 INFO  Hooks:21 - Base URL : null
+2021-03-31 23:04:34 INFO  DefaultHttpClient:695 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8085: The target server failed to respond
+2021-03-31 23:04:34 INFO  DefaultHttpClient:705 - Retrying request to {}->http://localhost:8085
+2021-03-31 23:04:34 INFO  DefaultHttpClient:695 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8085: The target server failed to respond
+2021-03-31 23:04:34 INFO  DefaultHttpClient:705 - Retrying request to {}->http://localhost:8085
+2021-03-31 23:04:34 INFO  DefaultHttpClient:695 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8085: The target server failed to respond
+2021-03-31 23:04:34 INFO  DefaultHttpClient:705 - Retrying request to {}->http://localhost:8085

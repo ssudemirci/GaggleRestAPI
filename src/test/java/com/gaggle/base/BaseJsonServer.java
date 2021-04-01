@@ -10,15 +10,12 @@ import io.restassured.specification.ResponseSpecification;
 
 
 public class BaseJsonServer {
-    public static RequestSpecification requestSpec;
-    public static ResponseSpecification responseSpec;
+    public  RequestSpecification jsonRequestSpec;
 
-    public static void setUP() {
-
+    public  void setUP() {
         RestAssured.baseURI = ConfigurationReader.getProperty("jsonServeBaseURI");
-
         RestAssured.basePath = ConfigurationReader.getProperty("jsonServeBasePath");
-        requestSpec = new RequestSpecBuilder().build().
+        jsonRequestSpec = new RequestSpecBuilder().build().
                 contentType(ContentType.JSON);
 
     }
