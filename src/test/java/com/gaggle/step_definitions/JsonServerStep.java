@@ -20,8 +20,8 @@ import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.is;
 
 public class JsonServerStep extends BaseJsonServer {
-    private String post_iSO_currentTime;
-    private  String post_message;
+    private  static String post_iSO_currentTime;
+    private  static String post_message;
     private static String id;
     private  Response response;
     private  JsonPath jsonPath;
